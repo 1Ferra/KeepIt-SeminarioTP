@@ -3,6 +3,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Features
+
+- Pestaña de Login
+- Pestaña de registro de usuario (pendiente)
+- Pestaña principal con accesos y documentos destacados
+- Pestaña de documentos con sistema de carga y filtrado de los mismos
+- Pestaña de perfil (pendiente)
+
 ## Available Scripts
 
 In the project directory, you can run:
