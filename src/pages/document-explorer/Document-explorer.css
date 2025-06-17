@@ -1,0 +1,219 @@
+.document-explorer{
+    display: flex;
+    flex-direction: row;
+    height: 91vh;
+}
+
+.document-explorer-filters{
+    width: 18vw;
+    box-shadow: 2px 0 8px -2px rgba(0, 0, 0, 0.3);
+    font-family: 'Inter';
+    font-weight: 800;
+}
+
+.document-explorer-filters-content{
+    padding-left: 3vw;
+}
+
+.document-explorer-titulo{
+    margin-left: .5vw;
+    font-size: 2vh;
+}
+
+.filtros-titulo{
+    margin-top: 2vh;
+    text-align: left;
+    margin-bottom: 4vh;
+    padding-left: 3vw;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.document-filter-tipo, .document-filter-fecha, .document-filter-estado{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.document-explorer-content{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter';
+    font-weight: 800;
+}
+
+.document-explorer-menu-bar{
+    display: flex;
+    width: 90%;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.document-explorer-content-titulo{
+    display: flex;
+    align-items: center;
+    width: 18vw;
+}
+
+.document-explorer-content-barra{
+    width: 6px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #3a2cff;
+}
+
+.boton-agregar{
+    display: flex;
+    text-decoration: none;
+    padding: .5vw;
+    color: var(--app-white);
+    background-color: var(--app-violet);
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.document-explorer-columns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 4.5vh;
+    margin: 1vh 0;
+    border-radius: 8px;
+    background-color: #d3d3d3;
+}
+
+.document-explorer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: inherit;
+}
+
+.document{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 4.5vh;
+    margin: 1vh 0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 48%);
+}
+
+.document-barra{
+    position: absolute;
+    width: 1vw;
+    height: inherit;
+    background-color: #ff8d6b;
+    border-radius: 8px;
+}
+
+.document .columna, .document-explorer-columns .columna{
+    width: 12vw;
+}
+
+/* SELECTS - INPUTS */
+
+.filtro-titulo{
+    margin: 2vh 0 1vh 0;
+}
+
+.select-tipo-documento, .select-estado, .input-fecha-carga{
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 12vw;
+    height: 3vh;
+    color: #8b8b8b;
+    margin-top: 1vh;
+}
+
+
+/* VISUALIZADOR DE CARGA */
+
+.visualizador{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    display: none;
+    font-family: 'Inter';
+    font-weight: 800;
+}
+
+.backgroud-visualizador{
+    width: 100%;
+    height: 100%;
+    background-color: #0000009e;
+    position: fixed;
+    top: 0px;
+}
+
+.formulario-carga{
+    position: fixed;
+    font-family: 'Inter';
+    font-size: 20px;
+    background-color: #ffffff;
+    width: 65vw;
+    height: 65vh;
+    border-radius: 25px;
+}
+
+.formulario{
+    display: flex;
+    height: 30vh;
+    padding: 1vh 4vw;
+    font-size: 1.8vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.formulario-carga .document-explorer-content-titulo{
+    padding: 5vh 4vw;
+    font-size: 2vh;
+}
+
+.formulario-input-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 3vw;
+    width: 12vw;
+    height: 15vh;
+}
+
+.formulario-input-cont input, .formulario-input-cont select{
+    width: inherit;
+}
+
+.boton-aceptar{
+    position: absolute;
+    text-decoration: none;
+    padding: 0.5vh 2vw;
+    color: var(--app-white);
+    background-color: var(--app-black);
+    border-radius: 40px;
+    width: 4vw;
+    bottom: 4vh;
+    right: 2vw;
+}
+
+.formulario-input-titulo{
+    margin: 2vh 0 0 0;
+}
+
+.error-formulario-input{
+    color: #db0000;
+    font-size: 1.4vh;
+}
