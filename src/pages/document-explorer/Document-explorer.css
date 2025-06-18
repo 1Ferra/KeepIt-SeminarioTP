@@ -217,3 +217,33 @@
     color: #db0000;
     font-size: 1.4vh;
 }
+
+
+
+
+    .drop-zone {
+    border: 2px dashed #888;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: absolute;
+    bottom: 10vh;
+    font-family: 'Inter';
+    font-weight: 800;
+    }
+
+    .drop-zone.dragover {
+      background-color: #e0e0e0;
+    }
+
+    .file-name {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="file"] {
+      display: none;
+    }

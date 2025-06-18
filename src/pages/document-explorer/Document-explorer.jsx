@@ -1,5 +1,5 @@
 import './Document-explorer.css';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 function DocumentExplorer(){
 
@@ -24,6 +24,28 @@ function DocumentExplorer(){
         "Anulada",
         "Vencida"
     ]
+
+    const fileInputRef = useRef(null);
+    const [fileName, setFileName] = useState('');
+    const [dragOver, setDragOver] = useState(false);
+
+    const handleFileChange = (e) => {
+        if (e.target.files.length) {
+        setFileName(e.target.files[0].name);
+        }
+    };
+
+    const handleDrop = (e) => {
+        e.preventDefault();
+        setDragOver(false);
+        if (e.dataTransfer.files.length) {
+        const file = e.dataTransfer.files[0];
+        setFileName(file.name);
+        // Asignar archivo al input para mantenerlo sincronizado
+        fileInputRef.current.files = e.dataTransfer.files;
+        }
+    };
+
 
     const mostrar = () => {
         document.getElementById('visualizador').style.display = 'flex'
@@ -236,6 +258,25 @@ function DocumentExplorer(){
                             <input type="number" id='input-formulario-monto' className='input-fecha-carga' readonly/>
                             <p className='error-formulario-input' id='error-formulario-monto'></p>
                         </div>
+                                <div
+                                className={`drop-zone ${dragOver ? 'dragover' : ''}`}
+                                onClick={() => fileInputRef.current.click()}
+                                onDragOver={(e) => {
+                                    e.preventDefault();
+                                    setDragOver(true);
+                                }}
+                                onDragLeave={() => setDragOver(false)}
+                                onDrop={handleDrop}
+                                >
+                                Arrastrá un archivo aquí o hacé clic para seleccionarlo.
+                                <input
+                                    type="file"
+                                    ref={fileInputRef}
+                                    style={{ display: 'none' }}
+                                    onChange={handleFileChange}
+                                />
+                                {fileName && <div className="file-name">{fileName}</div>}
+                                </div>
                         <a href='#' className='boton-aceptar' onClick={cargarDocumento}>Aceptar</a>
                     </form>
                 </div>
