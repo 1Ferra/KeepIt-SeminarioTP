@@ -52,3 +52,11 @@
 .violeta{
     color: var(--app-violet);
 }
+
+.violeta-bk{
+  background-color: var(--app-violet);
+}
+
+.naranja-bk{
+  background-color: var(--app-orange);
+}

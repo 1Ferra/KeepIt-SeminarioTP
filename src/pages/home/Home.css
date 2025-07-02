@@ -1,6 +1,9 @@
 .home{
     font-family: 'Inter';
     font-weight: 800;
+    height: 100vh;
+    background-color: #F5F5F5;
+    padding: 3vw;
 }
 
 /* Hero Image */
@@ -115,8 +118,8 @@
     width: 30vw;
     height: 4.2vh;
     margin: 1vh 0px;
-    background-color: #d3d3d3;
-    border-radius: 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 9px;
     align-items: center;
     justify-content: space-between;
 }
@@ -126,7 +129,7 @@
     width: 1vw;
     height: inherit;
     background-color: #ff8d6b;
-    border-radius: 15px;
+    border-radius: 9px;
 }
 
 .documento-vencer-nombre{
@@ -135,4 +138,140 @@
 
 .documento-vencer-fecha{
     margin-right: 2vw;
+}
+
+
+/* NUEVO HOME */
+
+.home-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4vh;
+}
+
+.home-bot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home-indicador-left{
+    display: flex;
+    background-color: var(--app-white);
+    width: 54vw;
+    height: 30vh;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 2vw 2vw;
+    justify-content: space-between;
+}
+
+.home-indicador-right{
+
+}
+
+.home-indicador-left-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.indicador-mes{
+    display: flex;
+    flex-direction: column;
+    width: 4vw;
+    padding: 0 .2vw;
+}
+
+.cantidad-docs{
+    border: 2px solid #8E8E8E;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+}
+
+.barra-docs{
+    background: linear-gradient(rgb(58, 44, 255) 0%, rgb(112, 71, 214) 58%, rgb(255, 141, 107) 100%);
+    border-radius: 14px;
+}
+
+.mes-docs{
+    margin-top: 1vh;
+}
+
+.home-indicador-right{
+    display: flex;
+    background-color: var(--app-white);
+    width: 30vw;
+    height: 30vh;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 2vw 2vw;
+    justify-content: space-between;
+}
+
+.home-indicador-right-cont{
+    display: flex;
+    height: 24vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.indicador-tipo{
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+}
+
+.indicador-tipo-cant{
+    font-size: 6vh;
+    text-align: left;
+}
+
+
+.indicador-tipo-texto{
+    background-color: var(--app-orange);
+    border-radius: 20px;
+    padding: .5vh;
+    font-size: 1.7vh;
+}
+
+.indicador-tipo-texto:first-child{
+    background-color: var(--app-violet);
+}
+
+.home-docs-vencer{
+    display: flex;
+    background-color: var(--app-white);
+    width: 42vw;
+    height: 30vh;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 2vw 2vw;
+    justify-content: space-between;
+}
+
+.home-docs-cargados{
+    display: flex;
+    background-color: var(--app-white);
+    width: 42vw;
+    height: 30vh;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 2vw 2vw;
+    justify-content: space-between;
+}
+
+.home-docs-vencer-cont{
+    height: 23vh;
+}
+
+.home-docs-cargados-cont{
+    height: 23vh;
+}
+
+.home-tituloo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
