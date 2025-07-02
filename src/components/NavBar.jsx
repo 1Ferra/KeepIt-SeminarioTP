@@ -4,12 +4,12 @@ function NavBar(){
 
     const accesos = [
         {descripcion: "Documentos", href: "/documents"},
-        {descripcion: "Perfil", href: "/"},
+        {descripcion: "Perfil", href: "/home"},
     ]
 
     return(
         <div className='nav-bar'>
-                <a href='/' className='nav-keepit-logo'>KeepIt</a>
+                <a href='/home' className='nav-keepit-logo'>KeepIt</a>
                 <div className='nav-buttons'>
                     {
                     accesos.map(acceso => (

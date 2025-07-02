@@ -46,3 +46,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.violeta{
+    color: var(--app-violet);
+}

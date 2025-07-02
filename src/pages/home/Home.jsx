@@ -4,7 +4,7 @@ function Home(){
 
     const accesos = [
         {descripcion: "Documentos", href: "/documents", icono: "library_books"},
-        {descripcion: "Perfil", href: "/" , icono: "person"},
+        {descripcion: "Perfil", href: "/home" , icono: "person"},
     ]
     const proximosVencimientos = [
         {nombre: "Seguro La Caja", fecha_vencimiento: "01/07/2025"},

@@ -14,10 +14,10 @@ function Login(){
                         <div className="login-input-placeholder">Contraseña</div>
                         <input  type="password" className="login-input"></input>
                     </div>
-                    <a href='/' className="login-button">Acceder</a>
+                    <a href='/home' className="login-button">Acceder</a>
                     <div className="login-signup">
                         <div className="login-signup-text">No tienes usuario?</div>
-                        <a href="#" className="login-signup-link">Crear Usuario</a>
+                        <a href="/signup" className="login-signup-link">Crear Usuario</a>
                     </div>
                 </div>
             </div>

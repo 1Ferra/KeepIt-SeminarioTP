@@ -1,0 +1,84 @@
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, var(--app-orange), var(--app-violet));
+    font-family: 'Inter';
+}
+
+.signup-container{
+    display: flex;
+    flex-direction: row;
+    width: 66vw;
+    height: 80vh;
+    background-color: #ffffff;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.signup-titulo{
+    font-size: 28px;
+}
+
+.signup-subtitulo{
+    font-size: 16px;
+    color: #8E8E8E;
+    padding: 2vh 0 5vh 0;
+}
+
+.signup-container-data{
+    width: 20vw;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-container-data .keeipit-logo{
+    font-size: 2.5vh;
+    font-weight: 800;
+    text-align: left;
+    margin-bottom: 7vh;
+    width: 100%;
+}
+
+.signup-hero-img{
+    width: 30vw;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.signup-input{
+    width: 16vw;
+    height: 2.3vh;
+    border: 2px solid var(--app-violet);
+    border-radius: 20px;
+}
+
+.signup-button{
+    display: flex;
+    height: 3.5vh;
+    background-color: var(--app-violet);
+    color: var(--app-white);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, .25);
+    margin-top: 5vh;
+    text-decoration: none;
+    width: 16vw;
+}
+
+.signup-hero-text{
+    position: fixed;
+    top: 75%;
+    padding-left: 3vw;
+    width: 19vw;
+    text-align: left;
+    font-size: 2.4vh;
+    font-weight: 800;
+}
